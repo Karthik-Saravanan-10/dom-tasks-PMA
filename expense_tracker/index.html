@@ -11,7 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body onload="initLoad()">
+<body>
     <div class="head">
         <div class="form">
             <form id="head">
@@ -67,11 +67,11 @@
         <div class="sort-field">
             <label>Filter</label>
             <div class="radio-div">
-                <input type="radio" id="all-rd" name="type" checked onclick="initLoad()">
+                <input type="radio" id="all-rd" name="type" checked onclick="tracker.initLoad()">
                 <label for="all-rd">All</label>
-                <input type="radio" id="income-rd2" name="type" onclick="incomeFilter('income')">
+                <input type="radio" id="income-rd2" name="type" onclick="tracker.incomeFilter('income')">
                 <label for="income-rd2">Income</label>
-                <input type="radio" id="expense-rd2" name="type" onclick="incomeFilter('expense')">
+                <input type="radio" id="expense-rd2" name="type" onclick="tracker.incomeFilter('expense')">
                 <label for="expense-rd2">Expenses</label>
             </div>
         </div>
@@ -102,6 +102,7 @@
         </table>
     </div>
 </body>
-<script src="./index.js"></script>
+<!-- <script src="./index.js"></script> -->
+<script src="./index_class.js"></script>
 
 </html>
