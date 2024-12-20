@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <h1>To-do List</h1>
+    <form>
+        <div class="container">
+            <div class="search">
+                <input type="text" name="task" id="task" class="task-input" value="">
+                <button type="submit" class="add-btn">+</button>
+            </div>
+            <p class="indicator-p"></p>
+            <div class="filter">
+                <button type="button" onclick="todolist.initalLoad()" class="indi-btn">All</button>
+                <button type="button" onclick="todolist.completeList()" class="indi-btn">Completed</button>
+                <button type="button" onclick="todolist.pendingList()" class="indi-btn">Pending</button>
+            </div>
+            <div class="dynamic-div" id="dynamic-div">
+            </div>
+        </div>
+    </form>
+</body>
+<script src="./index-class.js"></script>
+
+</html>

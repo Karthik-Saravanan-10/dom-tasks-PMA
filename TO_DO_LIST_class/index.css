@@ -1,0 +1,105 @@
+body {
+    margin: 10px 35%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    margin-left: 100px;
+}
+
+button {
+    cursor: pointer;
+}
+
+input[type='text'] {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #C0C0C0;
+}
+
+input[type='checkbox'] {
+    accent-color: white;
+    width: 20px;
+}
+
+.filter {
+    margin-top: 8px;
+    display: flex;
+    gap: 10px;
+}
+
+.filter button {
+    width: 109px;
+    height: 30px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 1px solid #C0C0C0;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #8F8F8F;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.filter button:hover,
+.indicator {
+    background-color: #8F8F8F !important;
+    color: white !important;
+}
+
+.dynamic-content {
+    display: flex;
+    justify-content: space-between;
+    width: 346px;
+    margin-top: 10px;
+    border: 1px solid #C0C0C0;
+    padding: 0 10px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.content-left,
+.content-right {
+    display: flex;
+    gap: 10px;
+}
+
+.search {
+    display: flex;
+}
+
+.add-btn {
+    width: 40px;
+    background-color: #13E328;
+    border: none;
+    color: white;
+    font-size: large;
+    font-weight: 700;
+}
+
+.edit-btn {
+    background-color: #0085FF;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 8px;
+    color: white;
+}
+
+.delete-btn {
+    background-color: red;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 8px;
+    color: white;
+}
+
+.indicator-p {
+    color: red;
+    font-size: 16px;
+    margin: 3px 0;
+}
+
+.indicator-div {
+    border: 2px solid red !important;
+}

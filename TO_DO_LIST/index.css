@@ -1,0 +1,90 @@
+body{
+    margin: 10px 35%;
+}
+
+h1{
+    margin-left: 100px;
+}
+
+button{
+    cursor: pointer;
+}
+
+input[type='text']{
+    width: 300px;
+    height: 30px;
+    border: 1px solid #C0C0C0;
+}
+
+input[type='checkbox']{
+    accent-color: white;
+    width: 20px;
+}
+
+.filter{
+    margin-top: 8px;
+    display: flex;
+    gap: 12px;
+}
+
+.filter button{
+    width: 109px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #C0C0C0;
+    border-radius: 4px;
+    cursor: pointer;
+    color: gray;
+}
+
+.filter button:hover,
+.indicator{
+    background-color:  gray !important;
+    color: white !important;
+}
+
+.dynamic-content{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin-top: 10px;
+    border: 1px solid #C0C0C0;
+    padding: 0 10px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.content-left,
+.content-right{
+    display: flex;
+    gap: 10px;
+}
+
+.search{
+    display: flex;
+}
+
+.add-btn{
+    width: 45px;
+    background-color: #90EE90;
+    border: none;
+    color: white;
+    font-size: large;
+    font-weight: 700;
+}
+
+.edit-btn{
+    background-color: blue;
+    border: none;
+    height: 30px;
+    border-radius: 8px;
+    color: white;
+}
+
+.delete-btn{
+    background-color: red;
+    border: none;
+    height: 30px;
+    border-radius: 8px;
+    color: white;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./assest/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body onload="myfunction('thanjavur')">
+    <form id="container">
+        <div class="header">
+            <input type="text" name="inputData" id="inputData">
+            <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="cloudy">
+            <img src="./assest/cloudy.png" alt="" width="150" height="150">
+        </div>
+        <p class="date-text"></p>
+        <div id="main-content" class="">
+            <div class="content">
+                <p class="celcius"></p>
+                <p class="city"></p>
+            </div>
+            <div class="bottom">
+                <div class="bottom-flex">
+                    <i class="fa-solid fa-water"></i>
+                    <div class="humudity-left">
+                        <p id="humudity"></p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="bottom-flex">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="humudity-left">
+                        <p id="windSpeed"></p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="indicator"></p>
+    </form>
+</body>
+<script src="./index.js"></script>
+
+</html>

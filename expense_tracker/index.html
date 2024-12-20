@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body onload="initLoad()">
+    <div class="head">
+        <div class="form">
+            <form id="head">
+                <div class="input-field">
+                    <label for="date">Date</label>
+                    <input type="date" name="" id="date">
+                    <p class="indicator"></p>
+                </div>
+                <div class="input-field">
+                    <label for="name">summary</label>
+                    <input type="text" name="" id="name">
+                    <p class="indicator"></p>
+                </div>
+                <div class="input-field">
+                    <label for="amount">Amount</label>
+                    <input type="number" name="" id="amount">
+                    <p class="indicator"></p>
+                </div>
+                <div class="input-field">
+                    <label>Type</label>
+                    <div class="radio-div">
+                        <input type="radio" id="income-rd" name="type" value="income">
+                        <label for="income-rd">Income</label>
+                        <input type="radio" id="expense-rd" name="type" value="expense">
+                        <label for="expense-rd">Expenses</label>
+                    </div>
+                    <p class="indicator"></p>
+                </div>
+                <div class="input-field">
+                    <label for="select-box">category</label>
+                    <select name="" id="select-box">
+                        <option value=""></option>
+                        <option value="loan">Loan</option>
+                        <option value="salary">Salary</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="education">Education</option>
+                        <option value="houserent">House Rent</option>
+                        <option value="miscellaneous">miscellaneous</option>
+                    </select>
+                    <p class="indicator"></p>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="display">
+            <h1>Available Balance</h1>
+            <h2 id="totalAmount"></h2>
+        </div>
+    </div>
+
+    <form id="middle" class="middle">
+        <div class="sort-field">
+            <label>Filter</label>
+            <div class="radio-div">
+                <input type="radio" id="all-rd" name="type" checked onclick="initLoad()">
+                <label for="all-rd">All</label>
+                <input type="radio" id="income-rd2" name="type" onclick="incomeFilter('income')">
+                <label for="income-rd2">Income</label>
+                <input type="radio" id="expense-rd2" name="type" onclick="incomeFilter('expense')">
+                <label for="expense-rd2">Expenses</label>
+            </div>
+        </div>
+
+        <div class="sort-field">
+            <label for="select-box2">category</label>
+            <select name="" id="select-box2">
+                <option value="empty">All</option>
+                <option value="loan">Loan</option>
+                <option value="salary">Salary</option>
+                <option value="shopping">Shopping</option>
+                <option value="education">Education</option>
+                <option value="houserent">House Rent</option>
+                <option value="miscellaneous">miscellaneous</option>
+            </select>
+        </div>
+    </form>
+
+    <div class="bottom">
+        <table>
+            <tr id="trElement">
+                <th>Date</th>
+                <th>Summary</th>
+                <th>Credit</th>
+                <th>Debit</th>
+                <th>Balance</th>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
